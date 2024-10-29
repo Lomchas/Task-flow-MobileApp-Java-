@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logotf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/cerocuatro"
+                android:letterSpacing="0.1"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_login_register"
+                    android:hint="Email"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_login_register"
+                    android:hint="Password"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login_background"
+                    android:fontFamily="@font/cerocuatro"
+                    android:letterSpacing="0.1"
+                    android:padding="15dp"
+                    android:text="Registrate"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login_background"
+                    android:fontFamily="@font/cerocuatro"
+                    android:letterSpacing="0.1"
+                    android:padding="15dp"
+                    android:text="Entrar"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cerocuatro"
+                    android:text="O inicia sesion con:"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/background_btn_socials"
+                        android:src="@drawable/google_svgrepo_com" />
+
+                    <ImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/background_btn_socials"
+                        android:src="@drawable/facebook_v2_svgrepo_com" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
