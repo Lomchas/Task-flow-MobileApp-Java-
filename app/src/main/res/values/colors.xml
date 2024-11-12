@@ -8,4 +8,5 @@
     <color name="fourth">#EAEAEA</color>
     <color name="white_opacity">#27FFFFFF</color>
     <color name="black_opacity">#26000000</color>
+    <color name="error_field">#FD8A8A</color>
 </resources>

@@ -9,12 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/main"
-        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:src="@drawable/logotf" />
 
@@ -43,37 +42,66 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/fullNameFieldRegister"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/edit_text_login_register"
                     android:hint="Nombre Completo"
+                    android:inputType="textPersonName"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textAlignment="center"
                     android:textColor="@color/white" />
 
                 <EditText
+                    android:id="@+id/emailFieldRegister"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/edit_text_login_register"
                     android:hint="Email"
+                    android:inputType="textEmailAddress"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textAlignment="center"
                     android:textColor="@color/white" />
 
                 <EditText
+                    android:id="@+id/passFieldRegister"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/edit_text_login_register"
                     android:hint="Password"
+                    android:inputType="textPassword"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textAlignment="center"
                     android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/confirmPassFieldRegister"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_login_register"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/error_field"
+                    />
 
             </LinearLayout>
 
@@ -86,65 +114,33 @@
                 android:padding="5dp">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGoLoginRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:background="@drawable/btn_login_background"
                     android:fontFamily="@font/cerocuatro"
                     android:letterSpacing="0.1"
                     android:padding="15dp"
-                    android:text="Registrate"
-                    android:textColor="@color/white" />
+                    android:text="Iniciar sesion"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:background="@drawable/btn_login_background"
                     android:fontFamily="@font/cerocuatro"
                     android:letterSpacing="0.1"
                     android:padding="15dp"
-                    android:text="Entrar"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/cerocuatro"
-                    android:text="O inicia sesion con:"
+                    android:text="Crear"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginRight="5dp"
-                        android:background="@drawable/background_btn_socials"
-                        android:src="@drawable/google_svgrepo_com" />
-
-                    <ImageButton
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginLeft="5dp"
-                        android:background="@drawable/background_btn_socials"
-                        android:src="@drawable/facebook_v2_svgrepo_com" />
-                </LinearLayout>
+                    android:textSize="20sp" />
 
             </LinearLayout>
+
 
         </LinearLayout>
 

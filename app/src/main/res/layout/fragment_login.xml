@@ -43,26 +43,40 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/emailFieldLogin"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/edit_text_login_register"
                     android:hint="Email"
+                    android:inputType="textEmailAddress"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textAlignment="center"
                     android:textColor="@color/white" />
 
                 <EditText
+                    android:id="@+id/passFieldLogin"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/edit_text_login_register"
                     android:hint="Password"
+                    android:inputType="textPassword"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textAlignment="center"
                     android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/error_field"
+                    />
 
             </LinearLayout>
 
@@ -72,25 +86,32 @@
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:orientation="horizontal"
+
                 android:padding="5dp">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGoRegisterLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/btn_login_background"
                     android:fontFamily="@font/cerocuatro"
                     android:letterSpacing="0.1"
+                    android:textSize="20sp"
                     android:padding="15dp"
+                    android:layout_marginRight="5dp"
                     android:text="Registrate"
                     android:textColor="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/btn_login_background"
                     android:fontFamily="@font/cerocuatro"
                     android:letterSpacing="0.1"
+                    android:textSize="20sp"
                     android:padding="15dp"
+                    android:layout_marginLeft="5dp"
                     android:text="Entrar"
                     android:textColor="@color/white" />
 
@@ -110,7 +131,7 @@
                     android:fontFamily="@font/cerocuatro"
                     android:text="O inicia sesion con:"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -119,6 +140,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/googleSignInButton"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginRight="5dp"
@@ -126,6 +148,7 @@
                         android:src="@drawable/google_svgrepo_com" />
 
                     <ImageButton
+                        android:id="@+id/facebookSignInButton"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginLeft="5dp"

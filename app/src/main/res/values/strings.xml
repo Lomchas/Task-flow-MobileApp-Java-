@@ -3,6 +3,11 @@
     <string name="eslogan">Get things done, One task at a time</string>
     <string name="login">INICIA SESION</string>
     <string name="register">REGISTRATE</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client_id">215377912103-g43ch09j79snlq5dk46a5t4po2e61bhk.apps.googleusercontent.com</string>
+
+
+    <string name="facebook_client_token">4a01cbb1f61e0ebbc5a583f3af952bf5</string>
+    <string name="facebook_app_id">854929476807798</string>
+    <string name="fb_login_protocol_scheme">fb854929476807798</string>
 </resources>
