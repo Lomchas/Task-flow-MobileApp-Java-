@@ -10,4 +10,17 @@
     <string name="facebook_client_token">4a01cbb1f61e0ebbc5a583f3af952bf5</string>
     <string name="facebook_app_id">854929476807798</string>
     <string name="fb_login_protocol_scheme">fb854929476807798</string>
+
+    <string-array name="task_categories">
+        <item>Trabajo</item>
+        <item>Estudio</item>
+        <item>Personal</item>
+        <item>Familia</item>
+        <item>Médico</item>
+        <item>Deporte</item>
+        <item>Mascotas</item>
+        <item>Amigos</item>
+        <item>Amor</item>
+        <item>Otros</item>
+    </string-array>
 </resources>

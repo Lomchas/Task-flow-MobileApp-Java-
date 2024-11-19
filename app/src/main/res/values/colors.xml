@@ -9,4 +9,8 @@
     <color name="white_opacity">#27FFFFFF</color>
     <color name="black_opacity">#26000000</color>
     <color name="error_field">#FD8A8A</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="delete_btn">#CA3F3F</color>
+    <color name="complete_btn">#198A15</color>
+    <color name="inComplete_btn">#00FFFFFF</color>
 </resources>
